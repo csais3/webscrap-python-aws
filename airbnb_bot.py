@@ -7,7 +7,7 @@ from selenium.webdriver.common.keys import Keys
 import time
 import pandas as pd
 
-driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
+driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
 driver.get('https://mx.indeed.com/')
 
 df = pd.DataFrame({'link': [''], 'job_title': [''], 'company': [''],
